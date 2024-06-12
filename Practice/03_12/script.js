@@ -1,8 +1,8 @@
-/**
- * Practice: Making classes and objects
- *
- * - Find a type of object you have more than one of in your house (eg. clothing, writing tools, etc).
- * - Create a class describing this object type - its properties and methods.
- * - Create several objects using the class.
- * - Test the objecs by calling their properties and using their methods in the console.
- */
+import Computer from "./computer.js";
+
+// Create an instance of Computer
+const myLap = new Computer("dell", "laptop", "black", 3, 2, true);
+console.log(myLap); // Log the instance to the console
+
+// Make the instance globally accessible for further inspection
+window.myLap = myLap;
